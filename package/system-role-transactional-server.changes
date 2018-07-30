@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Mon Jul 30 11:22:52 UTC 2018 - rbrown@suse.com
+
+- Use %license macro for package license (fate#326327)
+- 15.1.1
+
+-------------------------------------------------------------------
 Wed Jul 18 13:53:11 UTC 2018 - rbrown@suse.com
 
 - Transactional Server System Role initial package (fate#326327)
