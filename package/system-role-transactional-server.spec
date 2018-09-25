@@ -35,7 +35,7 @@ BuildRequires:  yast2-installation-control >= 4.0.0
 
 Url:            https://github.com/yast/system-role-transactional-server
 AutoReqProv:    off
-Version:        15.1.1
+Version:        15.1.2
 Release:        0
 Summary:        Transactional Server role definition
 License:        MIT
