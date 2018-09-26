@@ -15,7 +15,6 @@ textdomain="control"
       </serverro>
       <serverro_description>
         <label>• Transactional Server uses a read-only root filesystem to provide atomic, automatic updates of a system without interfering with the running system.
-• Separate /home partition (XFS) for disks larger than 20GB
 • Update using `transactional-update dup`, then reboot for the update to take effect
         </label>
       </serverro_description>
