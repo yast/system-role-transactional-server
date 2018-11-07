@@ -27,7 +27,8 @@
 #
 ######################################################################
 
-Name:           system-role-transactional-server
+%define role_name transactional-server
+Name:           system-role-%{role_name}
 # xmllint (for validation)
 BuildRequires:  libxml2-tools
 # RNG validation schema
@@ -35,7 +36,7 @@ BuildRequires:  yast2-installation-control >= 4.0.0
 
 Url:            https://github.com/yast/system-role-transactional-server
 AutoReqProv:    off
-Version:        15.1.2
+Version:        15.1.3
 Release:        0
 Summary:        Transactional Server role definition
 License:        MIT
@@ -65,7 +66,8 @@ mkdir -p $RPM_BUILD_ROOT
 #
 # Add control file
 #
-install -m 644 control/installation.xml $RPM_BUILD_ROOT/
+mkdir -p $RPM_BUILD_ROOT/%{_datadir}/system-roles
+install -m 644 control/installation.xml $RPM_BUILD_ROOT/%{_datadir}/system-roles/${role_name}.xml
 
 # install LICENSE (required by build service check)
 mkdir -p $RPM_BUILD_ROOT/%{_prefix}/share/doc/packages/%{name}
@@ -73,7 +75,7 @@ install -m 644 LICENSE $RPM_BUILD_ROOT/%{_prefix}/share/doc/packages/%{name}
 
 %files
 %defattr(644,root,root,755)
-/installation.xml
+%{_datadir}/system-roles
 %doc %dir %{_prefix}/share/doc/packages/%{name}
 %license %{_prefix}/share/doc/packages/%{name}/LICENSE
 
