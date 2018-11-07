@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Wed Nov  7 11:17:53 UTC 2018 - jreidinger@suse.com
+
+- use FHS compliant path (bsc#1108176)
+- 15.1.3
+
+-------------------------------------------------------------------
 Tue Sep 25 14:50:44 UTC 2018 - dgonzalez@suse.com
 
 - Delete partitioning information from description (fate#324713)
