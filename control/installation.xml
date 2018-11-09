@@ -14,9 +14,8 @@ textdomain="control"
         <label>Transactional Server</label>
       </serverro>
       <serverro_description>
-        <label>• Transactional Server uses a read-only root filesystem to provide atomic, automatic updates of a system without interfering with the running system.
-• Update using `transactional-update dup`, then reboot for the update to take effect
-        </label>
+        <label>• Transactional Server uses a read-only root filesystem to provide atomic, automatic updates of a system without interfering with the running system
+• Update using `transactional-update up`, then reboot for the update to take effect</label>
       </serverro_description>
     </texts>
 
