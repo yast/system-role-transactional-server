@@ -1,4 +1,10 @@
 -------------------------------------------------------------------
+Mon Nov 12 14:57:46 UTC 2018 - mvidner@suse.com
+
+- Correct the file name to make system roles reappear (bsc#1115607)
+- 15.1.5
+
+-------------------------------------------------------------------
 Fri Nov  9 11:55:11 UTC 2018 - rbrown@suse.com
 
 - Correct system role description and tidy up formatting (bsc#1115422)
