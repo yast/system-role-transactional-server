@@ -4,6 +4,6 @@ services:
   - docker
 
 before_install:
-  - docker build -t yast-system-role-server-transactional-server .
+  - docker build -t yast-system-role-transactional-server .
 script:
   - docker run -it -e TRAVIS=1 -e TRAVIS_JOB_ID="$TRAVIS_JOB_ID" yast-system-role-transactional-server ./.travis.sh

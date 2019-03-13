@@ -36,7 +36,7 @@ BuildRequires:  yast2-installation-control >= 4.0.0
 
 Url:            https://github.com/yast/system-role-transactional-server
 AutoReqProv:    off
-Version:        15.1.5
+Version:        15.1.6
 Release:        0
 Summary:        Transactional Server role definition
 License:        MIT
@@ -45,6 +45,7 @@ BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 Source:         %{name}-%{version}.tar.bz2
 Provides:       installer_module_extension() = system-role-transactional-server
 Provides:       extension_for_product() = SLES
+Provides:       extension_for_product() = SLES_BCL
 
 %description
 Meta package for Transactional Server role definition.
